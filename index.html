@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swikriti Mukhiya Sunuwar--Portfolio</title>
+    <meta name="description" content="Sangmo lama is full stack developer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
+      <div class="sidebar_content">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <h1>Hi! <br />I am Swikriti<br />I am a Developer</h1>
+      <p>Electronics, Communication and Information Engineering</p>
+      <button>Contact Me <i class="fa-solid fa-envelope"></i></button>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section_title">About Me</p>
+      <p class="section_subtitle">My Introduction</p>
+      <p class="about_description">
+        <strong>Hello, I am Swikriti Mukhiya Sunuwar</strong>
+        I am a passionate and dedicated developer with a strong foundation in
+        Electronics, Communication, and Information Engineering. I love creating
+        innovative solutions and bringing ideas to life through code. With a
+        keen interest in technology and design, I strive to build user-friendly
+        and efficient applications that make a positive impact.
+      </p>
+      <div class="about_skills">
+        <div>
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h3>Web Design</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile Application</h3>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <p class="section_title">My Speciality</p>
+      <p class="section_subtitle">My Skills</p>
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>HTML</p>
+          <div class="skill_grey_box">
+            <div class="skill_color_box">
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>CSS</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: blue; width: 75%"
+            >
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>JS</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: red; width: 70%"
+            >
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>React</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: rgb(53, 11, 92); width: 50%"
+            >
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>UI/UX</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: rgb(100, 4, 36); width: 60%"
+            >
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+    </script>
+  </body>
+</html>

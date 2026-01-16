@@ -1,0 +1,32 @@
+.skill_box {
+  margin-bottom: 20px;
+}
+.skill_box > p {
+  color: black;
+  margin-bottom: 15px;
+}
+.skill_grey_box {
+  background: rgb(233, 232, 237);
+  border-radius: 6px;
+}
+.skill_color_box {
+  background: darkcyan;
+  width: 88%;
+  border-radius: 6px;
+  height: 6px;
+  position: relative;
+  color: darkcyan;
+}
+.skill_color_box > span {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .outer_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
