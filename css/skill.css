@@ -2,20 +2,20 @@
   margin-bottom: 20px;
 }
 .skill_box > p {
-  color: black;
+  color: #1e293b;
   margin-bottom: 15px;
 }
 .skill_grey_box {
-  background: rgb(233, 232, 237);
-  border-radius: 6px;
+  background: #f5ede0;
+  border-radius: 8px;
+  border: 1px solid #e6d4c3;
 }
 .skill_color_box {
-  background: darkcyan;
   width: 88%;
   border-radius: 6px;
   height: 6px;
   position: relative;
-  color: darkcyan;
+  z-index: 100;
 }
 .skill_color_box > span {
   position: absolute;
@@ -23,6 +23,42 @@
   top: -22px;
   color: inherit;
 }
+
+/* HTML: Vibrant Orange */
+.skill_box[data-skill="html"] .skill_color_box {
+  background: linear-gradient(90deg, #e85d2a, #ff8c42);
+  color: #e85d2a;
+  box-shadow: 0 2px 8px rgba(232, 93, 42, 0.4);
+}
+
+/* CSS: Sky Blue */
+.skill_box[data-skill="css"] .skill_color_box {
+  background: linear-gradient(90deg, #4169e1, #87ceeb);
+  color: #4169e1;
+  box-shadow: 0 2px 8px rgba(65, 105, 225, 0.4);
+}
+
+/* JS: Warm Yellow */
+.skill_box[data-skill="js"] .skill_color_box {
+  background: linear-gradient(90deg, #ffc107, #ffd700);
+  color: #ffc107;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+}
+
+/* Python: Warm Rose-Coral */
+.skill_box[data-skill="python"] .skill_color_box {
+  background: linear-gradient(90deg, #d97e7a, #ff6b9d);
+  color: #d97e7a;
+  box-shadow: 0 2px 8px rgba(217, 126, 122, 0.4);
+}
+
+/* C: Deep Terracotta */
+.skill_box[data-skill="c"] .skill_color_box {
+  background: linear-gradient(90deg, #a0522d, #d2691e);
+  color: #a0522d;
+  box-shadow: 0 2px 8px rgba(160, 82, 45, 0.4);
+}
+
 @media screen and (min-width: 768px) {
   .outer_box {
     display: grid;

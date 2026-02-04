@@ -1,0 +1,137 @@
+#education {
+  margin-top: 100px !important;
+  background: linear-gradient(135deg, #f5ede0 0%, #e6d4c3 100%);
+}
+
+#education .section_title {
+  color: #8b5a2b;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#education .section_subtitle {
+  color: #c17a5a;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 60px;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.edu_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.edu_box {
+  background: linear-gradient(135deg, #f5d5c0, #e6c4b0);
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 5px solid #d97f3b;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(217, 127, 59, 0.15);
+  overflow: hidden;
+}
+
+.edu_box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(217, 127, 59, 0.25);
+  border-left-color: #e6a860;
+}
+
+.edu_box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.edu_box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #d97f3b;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.edu_box h2 br + p {
+  display: inline;
+}
+
+.edu_box .stream {
+  font-size: 14px;
+  color: #c17a5a;
+  font-weight: 600;
+  display: block;
+  margin: 8px 0;
+  letter-spacing: 1px;
+}
+
+.edu_box h2 span {
+  display: block;
+  font-size: 13px;
+  color: #8b6f47;
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.edu_box h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4a3728;
+  margin: 20px 0 0 0;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.edu_box h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #d97f3b, #e6a860);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .edu_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .edu_box {
+    padding: 40px;
+  }
+  
+  .edu_box h2 {
+    font-size: 28px;
+  }
+  
+  .edu_box h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .edu_box {
+    padding: 50px;
+  }
+  
+  .edu_box h2 {
+    font-size: 32px;
+  }
+}

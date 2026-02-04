@@ -5,11 +5,12 @@
   align-items: start;
   height: 100vh;
   padding: 30px;
-  background-image: url("/image/ss.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-color: rgb(244, 189, 189);
+  background-color: #f5ede0;
+  background-image: linear-gradient(135deg, rgba(245, 237, 224, 0.6) 0%, rgba(255, 179, 140, 0.6) 50%, rgba(230, 180, 160, 0.6) 100%), url("/image/ss.jpeg");
+  background-size: auto, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, right bottom;
+  background-blend-mode: multiply;
 }
 #hero > h1 {
   font-family: "Playfair Display";
@@ -17,20 +18,31 @@
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.3;
+  color: #c17a5a;
 }
 #hero > p {
   font-weight: 300;
   margin-bottom: 50px;
   line-height: 1.5;
+  color: #8b6f47;
 }
 #hero > button {
   width: 300px;
-  padding: 10px 15px;
-  background: transparent;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #d97f3b, #8b5a2b);
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border: 1px solid black;
-  border-radius: 2px;
+  border: 2px solid #c17a5a;
+  border-radius: 25px;
   cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(217, 127, 59, 0.4);
+}
+#hero > button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(217, 127, 59, 0.6);
+  background: linear-gradient(135deg, #8b5a2b, #d97f3b);
 }
