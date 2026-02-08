@@ -134,4 +134,9 @@
   .edu_box h2 {
     font-size: 32px;
   }
+  
+  .edu_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
 }

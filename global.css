@@ -43,9 +43,9 @@
     }
     h1,h2,h3,
     p{
-        all:unset;
+        margin: 0;
+        padding: 0;
         display: block;
-
     }
     ul,li{
         all: unset;

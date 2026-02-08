@@ -1,48 +1,122 @@
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
+  justify-content: center;
   height: 100vh;
   padding: 30px;
   background-color: #f5ede0;
-  background-image: linear-gradient(135deg, rgba(245, 237, 224, 0.6) 0%, rgba(255, 179, 140, 0.6) 50%, rgba(230, 180, 160, 0.6) 100%), url("/image/ss.jpeg");
-  background-size: auto, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, right bottom;
+  background-image: url("../../godawari.jpeg");
+  border-image-width: cover;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   background-blend-mode: multiply;
 }
+
+.hero_job {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_job h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 80px;
+  color: #c17a5a;
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+.hero_job p {
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  color: #c17a5a;
+  font-size: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__btn-download,
+.hero__btn-contact {
+  padding: 14px 30px;
+  border: 2px solid #d97f3b;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.hero__btn-download {
+  background: linear-gradient(135deg, #d97f3b, #8b5a2b);
+  border-color: #d97f3b;
+}
+
+.hero__btn-download a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero__btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(217, 127, 59, 0.4);
+  background: linear-gradient(135deg, #8b5a2b, #d97f3b);
+}
+
+.hero__btn-contact {
+  background: transparent;
+  border-color: #c17a5a;
+}
+
+.hero__btn-contact a {
+  text-decoration: none;
+  color: #c17a5a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero__btn-contact:hover {
+  background: #c17a5a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(193, 122, 90, 0.4);
+}
+
+.hero__btn-contact:hover a {
+  color: #fff;
+}
+
 #hero > h1 {
-  font-family: "Playfair Display";
-  font-size: 28px;
+  font-family: 'Young Serif', serif;
+  font-size: 80px;
+  color: #c17a5a;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.3;
-  color: #c17a5a;
+  letter-spacing: 2px;
 }
 #hero > p {
   font-weight: 300;
   margin-bottom: 50px;
   line-height: 1.5;
   color: #8b6f47;
-}
-#hero > button {
-  width: 300px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #d97f3b, #8b5a2b);
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border: 2px solid #c17a5a;
-  border-radius: 25px;
-  cursor: pointer;
-  color: #ffffff;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(217, 127, 59, 0.4);
-}
-#hero > button:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(217, 127, 59, 0.6);
-  background: linear-gradient(135deg, #8b5a2b, #d97f3b);
 }

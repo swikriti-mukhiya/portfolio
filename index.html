@@ -8,13 +8,7 @@
       name="description"
       content="Swikriti Mukhiya Sunuwar is full stack developer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,29 +16,57 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
   </head>
   <body>
     <nav class="sidebar">
       <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
       <div class="sidebar_content">
+        <img src="lala..jpeg" alt="Profile" class="sidebar_avatar" />
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
         </ul>
+        <div class="sidebar_socials" aria-label="Social links">
+          <a href="https://github.com/swikriti-mukhiya" aria-label="GitHub"  rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/share/1DcbtpSs5h/" class="social-facebook" aria-label="Facebook"  rel="noreferrer noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sukunanaa?igsh=ZjZpbTJnYnJ1cXow" class="social-instagram" aria-label="Instagram" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
     </nav>
+  </body>
+</html>
+      </div>
+    </section>
+
     <section id="hero">
-      <h1>Hi! <br />I am Swikriti<br />I am a Developer</h1>
-      <p>Electronics, Communication and Information Engineering</p>
-      <button>Contact Me <i class="fa-solid fa-envelope"></i></button>
+      <div class="hero_job">
+        <h1>Hi! </h1>
+        <h1>I'm Swikriti</h1>
+        <p>
+          Engineering Student • Aspiring Software Developer • Curious Builder
+        </p>
+        <div class="hero-buttons">
+          <button class="hero__btn-download">
+            <a href="CV_swikriti.pdf" download="">Download CV <i class="fa fa-download"></i></a>
+          </button>
+          <button class="hero__btn-contact">
+            <a href="#contact">Contact Me <i class="fa-solid fa-envelope"></i></a>
+          </button>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="section">
@@ -52,30 +74,33 @@
       <p class="section_subtitle">My Introduction</p>
       <p class="about_description">
         <strong>Hello, I am Swikriti Mukhiya Sunuwar</strong>
-        I am a passionate and dedicated developer with a strong foundation in
-        Electronics, Communication, and Information Engineering. I love creating
-        innovative solutions and bringing ideas to life through code. With a
-        keen interest in technology and design, I strive to build user-friendly
-        and efficient applications that make a positive impact.
+        I am an enthusiastic engineering student specializing in Electronics,
+        Communication, and Information Engineering. I have a passion for web
+        development and am constantly learning new technologies to enhance my
+        skills.
       </p>
       <div id="education" class="section">
         <p class="section_title">Education</p>
         <p class="section_subtitle">My education</p>
         <div class="edu_container">
           <div class="edu_box">
-            <h2>
-              +2 <br />
-              <p class="stream">[Science] &nbsp;&nbsp;&nbsp;[NEB]</p>
-              &nbsp;&nbsp;&nbsp;&nbsp;<span> Apr 2021 - Sep 2023</span>
-            </h2>
+            <h2>School<br /></h2>
+            <p class="stream">[SEE]</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span> Sep 2008- Aug 2020</span>
+            <h3>Shree Panchakanya Awasiya Bidhya Mandir</h3>
+          </div>
+
+          <div class="edu_box">
+            <h2>+2 <br /></h2>
+            <p class="stream">[Science] &nbsp;&nbsp;&nbsp;[NEB]</p>
+            <span> Apr 2021 - Sep 2023</span>
             <h3>Lumbini Academy</h3>
           </div>
+
           <div class="edu_box">
-            <h2>
-              Bachelor of Engineering<br />
-              <p class="stream">[BEI] &nbsp;&nbsp;&nbsp;[IOE]</p>
-              &nbsp;&nbsp;&nbsp;&nbsp;<span>Dec 2023 - Running</span>
-            </h2>
+            <h2>Bachelor of Engineering<br /></h2>
+            <p class="stream">[BEI] &nbsp;&nbsp;&nbsp;[IOE]</p>
+            <span>Dec 2023 - Running</span>
             <h3>National College of Engineering</h3>
           </div>
         </div>
@@ -154,11 +179,68 @@
       </div>
     </section>
 
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h2 class="contact-heading">Get In Touch</h2>
+        <p class="contact-subtitle">Open to collaborations, internships, and meaningful conversations.</p>
+        
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Your Phone Number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+
+        <div class="contact-divider">Or Connect With Me</div>
+        
+        <div class="contact-links">
+          <a href="mailto:swikritisunuwar@gmail.com" class="btn outline"><i class="fa-solid fa-envelope"></i>&nbsp;Email</a>
+          <a href="https://github.com/swikriti-mukhiya" class="btn outline" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a>
+          <a href="https://www.facebook.com/share/1DcbtpSs5h/" class="btn outline social-facebook" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook-f"></i>&nbsp;Facebook</a>
+          <a href="https://www.instagram.com/sukunanaa?igsh=ZjZpbTJnYnJ1cXow" class="btn outline social-instagram" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
+        </div>
+      </div>
+    </section>
+
     <script>
       const hamburger = document.querySelector("#hamburger");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("sidebar_hamburger_translate");
       });
+
+      // Handle contact form submission
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const contact = document.getElementById("contact").value;
+          const message = document.getElementById("message").value;
+
+          console.log("Contact Form Submitted:", { name, email, contact, message });
+          alert("Thank you for your message! I'll get back to you soon.");
+          contactForm.reset();
+        });
+
+      }
     </script>
   </body>
 </html>

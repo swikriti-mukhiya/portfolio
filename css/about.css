@@ -1,12 +1,22 @@
+
 #about {
     background: linear-gradient(135deg, #f5ede0 0%, #e6d4c3 50%, #dcc4b0 100%);
     position: relative;
 }
+ .young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 #about .section_title {
+   
+
+    font-family: "Playfair Display", serif;
     color: #8b5a2b;
     font-weight: 700;
     letter-spacing: 3px;
+    font-style: normal;
 }
 
 #about .section_subtitle {
@@ -51,6 +61,7 @@
     margin-bottom: 15px;
     letter-spacing: 0.5px;
 }
+
     
 .about_skills {
     margin-top: 60px;
