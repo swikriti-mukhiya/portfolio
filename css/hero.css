@@ -6,8 +6,8 @@
   height: 100vh;
   padding: 30px;
   background-color: #f5ede0;
-  background-image: url("../../godawari.jpeg");
-  border-image-width:auto;
+  background-image: url("godawari.jpeg");
+  border-image-width: auto;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
